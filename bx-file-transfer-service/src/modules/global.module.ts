@@ -7,6 +7,7 @@ import { loggerConfig } from '../configs/logger';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
+      envFilePath: '../../.env', 
     }),
     WinstonModule.forRoot(loggerConfig),
   ],
