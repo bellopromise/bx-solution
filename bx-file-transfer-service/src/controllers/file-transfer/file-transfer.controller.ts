@@ -125,7 +125,7 @@ export class FileTransferController {
             // Stream the file directly to the client
             fileStream.pipe(response);
     
-            this._logger.log(`File download initiated for: ${fileName}`);
+            this._logger.log(`File download completed for: ${fileName}`);
         } catch (error) {
             this._logger.error(`File download failed for ${fileName}: ${error.message}`);
 
